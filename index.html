@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paul Rand</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.poster {
+			width: 410px;
+			height: 600px;
+			overflow: hidden;
+			position: absolute;
+			top: 50px;
+			left: 50%;
+			margin-left: -205px;
+		}
+		#poster-1 {
+			background-color:#e3e2de;
+			transition: background-color .3s;
+			white-space: nowrap;
+		}
+		#poster-1 object {
+			width: 20%;
+			height: 100px;
+			padding: 10px;
+			display: inline-block;
+			position: relative;
+			transition: width .3s, height .3s;
+		}
+	</style>
+</head>
+<body>
+	<div id="poster-1" class="poster">
+
+	</div>
+
+	<script type="text/javascript">
+		function posterone() {
+			var bg = '#e3e2de';
+			var dir = window.location.href.substring(0, window.location.href.lastIndexOf('/')) + "/";
+
+			var posterone = document.getElementById('poster-1');
+			for (var i = 1; i <= 30; i++) {
+				var obj = document.createElement('object');
+				obj.setAttribute('type', 'image/svg+xml');
+				obj.setAttribute('data', dir+'svgs/let_'+i+'.svg')
+				posterone.appendChild(obj);
+				if (i % 5 == 0) {
+					var br = document.createElement('br');
+					posterone.appendChild(br);
+				}
+				obj.onmouseover = function() {
+					var doc = this.contentDocument;
+					var path = doc.getElementsByTagName('path')[0];
+					var col = path.style.fill;
+					if (col && col != '#e3e2de') {
+						document.getElementById('poster-1').style.backgroundColor = col;
+						console.log('Cambio colore in '+col+'!');
+					} else {
+						this.style.width = '30%';
+						this.style.height = '140px';
+						console.log('Ingrandisco la lettera!');
+					}
+				};
+				obj.onmouseout = function() {
+					document.getElementById('poster-1').style.backgroundColor = bg;
+					this.style.width = '20%';
+					this.style.height = '100px';
+					console.log('Torno normale!');
+				}
+			}
+		}
+
+		window.onload = function() {
+			posterone();
+		};
+	</script>
+</body>
+</html>
