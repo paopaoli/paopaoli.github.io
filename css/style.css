@@ -1,0 +1,219 @@
+html, body {
+  height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'gt_america_trialexpandedRg';
+    src: url('gt-america-trial-expanded-regular-webfont.woff2') format('woff2'),
+         url('gt-america-trial-expanded-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gt_america_trialexpanded_bold';
+    src: url('gt-america-trial-expanded-bold-webfont.woff2') format('woff2'),
+         url('gt-america-trial-expanded-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+    background-color: white;
+}
+.Loop {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+::-webkit-scrollbar {
+    display:none;
+}
+::scrollbar {
+  display: none;
+}
+
+#cf1 {
+    position: fixed;
+    left: 179px;
+    top: 15px;
+    z-index: 3;
+}
+
+#cf1 img {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#cf1 img.top:hover {
+  opacity:0;
+}
+
+#cf2 {
+    position: fixed;
+    left: 768px;
+    top: 15px;
+    z-index: 3;
+}
+
+#cf2 img {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#cf2 img.top:hover {
+  opacity:0;
+}
+
+.Gradiente {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+#Photo01 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+#Photo01 img {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#Photo01 img.top:hover {
+  opacity:0;
+}
+#Photo02 {
+    position: absolute;
+    left: 640px;
+    top: 0px;
+    z-index: 1;
+}
+#Photo02 img {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#Photo02 img.top:hover {
+  opacity:0;
+}
+#Photo03 {
+    position: absolute;
+    left: 0px;
+    top: 918px;
+    z-index: 1;
+}
+#Photo03 img {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#Photo03 img.top:hover {
+  opacity:0;
+}
+#Photo04 {
+    position: absolute;
+    left: 640px;
+    top: 918px;
+    z-index: 1;
+}
+#Photo04 img {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#Photo04 img.top:hover {
+  opacity:0;
+}
+
+.Photo05 {
+    position: absolute;
+    left: 0px;
+    top: 1836px;
+    z-index: 1;
+}
+.Photo06 {
+    position: absolute;
+    left: 640px;
+    top: 1836px;
+    z-index: 1;
+}
+.Photo07 {
+    position: absolute;
+    left: 0px;
+    top: 2754px;
+    z-index: 1;
+}
+.Photo08 {
+    position: absolute;
+    left: 640px;
+    top: 2754px;
+    z-index: 1;
+}
+.Photo09 {
+    position: absolute;
+    left: 0px;
+    top: 3672px;
+    z-index: 1;
+}
+.Photo10 {
+    position: absolute;
+    left: 640px;
+    top: 3672px;
+    z-index: 1;
+}
+.Photo11 {
+    position: absolute;
+    left: 0px;
+    top: 4590px;
+    z-index: 1;
+}
+.Photo12 {
+    position: absolute;
+    left: 640px;
+    top: 4590px;
+    z-index: 1;
+}
+.Back01 {
+    position: absolute;
+    left: 0px;
+    top: 5508px;
+    z-index: 1;
+}
+
