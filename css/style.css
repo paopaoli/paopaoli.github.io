@@ -11,19 +11,13 @@ html, body {
          url('gt-america-trial-expanded-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
-
-
-
-
 @font-face {
     font-family: 'gt_america_trialexpanded_bold';
     src: url('gt-america-trial-expanded-bold-webfont.woff2') format('woff2'),
          url('gt-america-trial-expanded-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 body {
     background-color: white;
@@ -32,7 +26,6 @@ body {
   position: relative;
   height: 100%;
   overflow: auto;
-  -webkit-overflow-scrolling: touch;
 }
 ::-webkit-scrollbar {
     display:none;
@@ -40,14 +33,12 @@ body {
 ::scrollbar {
   display: none;
 }
-
 #cf1 {
     position: fixed;
     left: 179px;
     top: 15px;
     z-index: 3;
 }
-
 #cf1 img {
   position: absolute;
   left: 0;
@@ -57,18 +48,15 @@ body {
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
-
 #cf1 img.top:hover {
   opacity:0;
 }
-
 #cf2 {
     position: fixed;
     left: 768px;
     top: 15px;
     z-index: 3;
 }
-
 #cf2 img {
   position: absolute;
   left: 0;
@@ -78,11 +66,9 @@ body {
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
-
 #cf2 img.top:hover {
   opacity:0;
 }
-
 .Gradiente {
     position: fixed;
     left: 0px;
@@ -162,55 +148,151 @@ body {
   opacity:0;
 }
 
-.Photo05 {
+#Photo05 {
     position: absolute;
     left: 0px;
     top: 1836px;
     z-index: 1;
 }
-.Photo06 {
+#Photo05 img {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#Photo05 img.top:hover {
+  opacity:0;
+}
+#Photo06 {
     position: absolute;
     left: 640px;
     top: 1836px;
     z-index: 1;
 }
-.Photo07 {
+#Photo06 img {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#Photo06 img.top:hover {
+  opacity:0;
+}
+#Photo07 {
     position: absolute;
     left: 0px;
     top: 2754px;
     z-index: 1;
 }
-.Photo08 {
+#Photo07 img {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#Photo07 img.top:hover {
+  opacity:0;
+}
+#Photo08 {
     position: absolute;
     left: 640px;
     top: 2754px;
     z-index: 1;
 }
-.Photo09 {
+#Photo08 img {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#Photo08 img.top:hover {
+  opacity:0;
+}
+#Photo09 {
     position: absolute;
     left: 0px;
     top: 3672px;
     z-index: 1;
 }
-.Photo10 {
+#Photo09 img {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#Photo09 img.top:hover {
+  opacity:0;
+}
+#Photo10 {
     position: absolute;
     left: 640px;
     top: 3672px;
     z-index: 1;
 }
-.Photo11 {
+#Photo10 img {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#Photo10 img.top:hover {
+  opacity:0;
+}
+#Photo11 {
     position: absolute;
     left: 0px;
     top: 4590px;
     z-index: 1;
 }
-.Photo12 {
+#Photo11 img {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#Photo11 img.top:hover {
+  opacity:0;
+}
+#Photo12 {
     position: absolute;
     left: 640px;
     top: 4590px;
     z-index: 1;
 }
-.Back01 {
+#Photo12 img {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+#Photo12 img.top:hover {
+  opacity:0;
+}
+.Ahahah {
     position: absolute;
     left: 0px;
     top: 5508px;

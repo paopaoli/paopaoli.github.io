@@ -1,12 +1,3 @@
-/**
- * Mixins
- */
-/**
- * Variables
- */
-/**
- * Keyframes
- */
 @-webkit-keyframes rotate {
   0% {
     -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
@@ -35,13 +26,11 @@
 *:before {
   box-sizing: border-box;
 }
-
 body {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
-
 h1,
 h2,
 h3,
@@ -50,7 +39,20 @@ h5,
 h6 {
   font-weight: bold;
 }
-
+@font-face {
+    font-family: 'gt_america_trialexpandedRg';
+    src: url('gt-america-trial-expanded-regular-webfont.woff2') format('woff2'),
+         url('gt-america-trial-expanded-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gt_america_trialexpanded_bold';
+    src: url('gt-america-trial-expanded-bold-webfont.woff2') format('woff2'),
+         url('gt-america-trial-expanded-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /**
  * Gallery
  */
@@ -84,10 +86,6 @@ h6 {
   -webkit-transform-origin: center center;
           transform-origin: center center;
 }
-
-/**
- * Poster
- */
 .poster {
   position: absolute;
   top: 50%;
@@ -119,7 +117,6 @@ h6 {
   right: 8px;
   left: auto;
 }
-
 .poster__content {
   position: relative;
   width: 500px;
@@ -131,7 +128,6 @@ h6 {
   box-shadow: 0 1px 4px 2px rgba(0, 0, 0, 0.2);
   line-height: 1;
 }
-
 .poster__header {
   position: absolute;
   z-index: 9;
@@ -139,35 +135,29 @@ h6 {
   width: 100%;
   overflow: hidden;
 }
-
 .poster__header-title {
   width: 25%;
   margin: 0 0 1.4em;
   text-align: right;
   font-size: 22px;
 }
-
 .poster__header-section {
   clear: both;
   font-size: 8px;
   font-weight: bold;
 }
-
 .poster__header-subtitle,
 .poster__header-meta {
   float: left;
 }
-
 .poster__header-subtitle {
   width: 25%;
   margin-right: 0.7em;
   text-align: right;
 }
-
 .poster__header-meta--spaced {
   margin-bottom: 0.7em;
 }
-
 .poster__body {
   position: absolute;
   top: 35%;
@@ -216,7 +206,6 @@ h6 {
   pointer-events: none;
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
-
   margin: auto;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -226,8 +215,8 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-left: -127px;
-top:440px;
+  left: -127px;
+  top:440px;
 }
 .card:after {
   content: " ";
@@ -237,7 +226,6 @@ top:440px;
   border-radius: 50%;
   left: 0;
   bottom: -50px;
-  
 }
 .card .card-content {
   margin: auto;
@@ -269,5 +257,48 @@ top:440px;
     top: 77px;
     z-index: 1;
     text-shadow: 2px 2px grey;
+    z-index: 2;
+}
+/* The Modal (background) */
+.modal {
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    z-index: 100;
+}
+.modal-content {
+    overflow: hidden;
+    position: fixed;
+    z-index: 100;
+}
+.close {
+    position: absolute;
+    left: 1140px;
+    top: 77px;
+    z-index: 100;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#myBtn {
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'gt_america_trialexpanded_bold';
+    color: #fb03E1;
+    font-size: 2em;
+    text-transform: uppercase;
+    position: absolute;
+    left: 60px;
+    top: 620px;
     z-index: 2;
 }

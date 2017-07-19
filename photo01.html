@@ -8,28 +8,36 @@
   <link rel="stylesheet" href="css/style4.css">
 </head>
 <body>
- <main id="js-gallery" role="main" class="gallery">
-       <div class="X1">
+          <main id="js-gallery" role="main" class="gallery">
+      
+          <button id="myBtn">INFO</button>
+          <div id="myModal" class="modal">
+          <div class="modal-content">
+          <img src="img/photo_gau_bee.png" width="1280px" height="auto">
+          
+          <span class="close">
+          <img src="img/xx-02.svg" height="60px" width="auto">
+          </span>
+          </div>
+          </div>
+     
+          <div class="X1">
           <a href="index.html">
           <img src="img/xx-02.svg" height="60px" width="auto">
           </a>   
           </div>
-     <section class="gallery__body">
+         
+          <section class="gallery__body">
           <div id="js-poster" class="main__gallery-poster poster">
           <div class="poster__content">
-          
-         
-        
           <div class="card">
           <div class="card-content">
           <img src="img/brockmann-text-02.svg" width= 210px height= auto>
           </div>
           </div>
           <div class="poster__body">
-                 
-          <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1342.8 1335.8">
+                <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1342.8 1335.8">
             	<g>
               	<path d="M805,616.6l-4.6,2c6.7,16.3,10.4,34.1,10.4,52.7c0,29-8.9,55.9-24.1,78.2l4.2,2.7c15.7-23.1,24.9-51,24.9-80.9C815.8,652,811.9,633.5,805,616.6z"/>
                 <path d="M543.3,726.8c-11.5-26.6-14.1-54.8-9-81.4l-5-0.8c-5.2,27.4-2.5,56.6,9.4,84.1c7.7,17.8,18.6,33.2,31.7,45.9l3.4-3.7C561.2,758.7,550.7,743.9,543.3,726.8z"/>
@@ -68,12 +76,29 @@
                 </div>
 		        </div>
           </section>
- </main>
+          </main>
+   
+                <script src="js/index01.js"></script>
+                <script src="js/index02.js"></script>
+                <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+// INFORMAZIONE
+<script>
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
 
-  
-      <script src="js/index02.js"></script>
-      <script src="js/index01.js"></script>
-      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+btn.onclick = function() {
+modal.style.display = "block";
+}
+span.onclick = function() {
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
 
 </body>
 </html>

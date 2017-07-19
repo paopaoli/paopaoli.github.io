@@ -15,7 +15,6 @@ body {
          url('gt-america-trial-expanded-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'gt_america_trialexpanded_bold';
@@ -23,8 +22,6 @@ body {
          url('gt-america-trial-expanded-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
-
 }
 .Titolo01 {
     font-family: 'gt_america_trialexpanded_bold';
