@@ -10242,6 +10242,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   };
   if ((0, _jquery2.default)('#letters')) {
     (0, _jquery2.default)('.letter').mouseenter(function () {
+      (0, _jquery2.default)('#31,#32').fadeOut();
       var letterH = (0, _jquery2.default)(this).height();
       (0, _jquery2.default)('.letter').css('height', 50);
       (0, _jquery2.default)(this).css('height', 140);
@@ -10281,6 +10282,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
       };
     });
     (0, _jquery2.default)('.letter').mouseleave(function () {
+      (0, _jquery2.default)('#31,#32').fadeIn();
       var letterH = (0, _jquery2.default)(this).height();
       (0, _jquery2.default)('.letter').css('height', 70);
     });
