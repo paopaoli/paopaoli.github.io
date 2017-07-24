@@ -27370,19 +27370,21 @@ var sequence = [1, 6, 11, 16, 21, 22, 23, 24, 25, 20, 15, 10, 5, 4, 3, 2, 7, 12,
           break;
       };
     });
+
     (0, _jquery2.default)('.letter').mouseenter((0, _lodash.debounce)((0, _jquery2.default)('#31,#32').fadeOut(), 400, {
       'leading': true,
       'trailing': false
     }));
+
+    (0, _jquery2.default)('.letter').mouseleave(function () {
+      var letterH = (0, _jquery2.default)(this).height();
+      (0, _jquery2.default)('.letter').css('height', 70);
+    });
+
     (0, _jquery2.default)('.letter').mouseleave((0, _lodash.debounce)((0, _jquery2.default)('#31,#32').fadeIn(), 400, {
       'leading': false,
       'trailing': true
     }));
-    (0, _jquery2.default)('.letter').mouseleave(function () {
-
-      var letterH = (0, _jquery2.default)(this).height();
-      (0, _jquery2.default)('.letter').css('height', 70);
-    });
   }
   if ((0, _jquery2.default)('#squares')) {
 
