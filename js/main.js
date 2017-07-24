@@ -27376,7 +27376,7 @@ var sequence = [1, 6, 11, 16, 21, 22, 23, 24, 25, 20, 15, 10, 5, 4, 3, 2, 7, 12,
       var letterH = (0, _jquery2.default)(this).height();
       (0, _jquery2.default)('.letter').css('height', 70);
       (0, _jquery2.default)('#31,#32').fadeIn();
-    }, 400));
+    }, 800));
   }
   if ((0, _jquery2.default)('#squares')) {
 
