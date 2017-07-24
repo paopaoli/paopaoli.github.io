@@ -555,7 +555,7 @@ a:active {
   height: 100px;
   width: 100px;
   top: 300px;
-  left: 100px;
+  left: 250px;
 }
 
 #luce {
@@ -566,22 +566,33 @@ a:active {
   height: 1000px;
   display: block;
   background-color: #CC312A;
-  border-top-left-radius: 50px;
-  -webkit-transform-origin: 50px 50px;
-          transform-origin: 50px 50px;
+  border-top-left-radius: 80px;
+  -webkit-transform-origin: 80px 80px;
+          transform-origin: 80px 80px;
+  transform: rotate(145deg);
   overflow: hidden;
   z-index: 10;
 }
 
-#luce #img {
-  position: relative;
-  height: 100px;
-  width: 100px;
+#luce .img {
+  position: absolute;
+  height: 160px;
+  width: 160px;
   top: 0;
   left: 0;
   z-index: 20;
 }
-
+#luce .img.pic{
+  z-index: 20;
+  transform: rotate(-145deg);
+}
+#luce .img.gif{
+  transform: rotate(-145deg);
+  z-index: 23;
+}
+#luce .img.visible{
+  z-index: 25;
+}
 #text_1 {
   position: absolute;
   top: 20%;

@@ -7,7 +7,7 @@ $(document).ready(function(){
   $(document).on("mousemove",function(e) {  
     var ax = -($(window).innerWidth()/2- e.pageX)/20;
     var ay = ($(window).innerHeight()/2- e.pageY)/10;
-    var zoom = Math.abs(e.pageY)/posterH;
+    var zoom = Math.abs(e.pageY)*1.8/posterH;
     card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg) scale("+zoom+");-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg) scale("+zoom+");-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg) scale("+zoom+")");
   });
 })

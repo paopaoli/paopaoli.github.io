@@ -27501,6 +27501,7 @@ function drag(event) {
       //console.log(position)
       // Set style
       (0, _jquery2.default)('#box #luce').css('transform', 'rotate(' + angleDeg + 'deg)');
+      (0, _jquery2.default)('#box #luce img.pic').addClass("visible");
       (0, _jquery2.default)('#box').css(position);
     };
   });
@@ -27508,6 +27509,7 @@ function drag(event) {
 
 // Destroy drag on mouse up
 function end() {
+  (0, _jquery2.default)('#box #luce img.pic').removeClass("visible");
   $moving = false;
 };
 
