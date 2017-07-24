@@ -66,9 +66,9 @@ if(IE) {
   window.addEventListener('load', initialize, false);
 }
 
-$(document).ready(function(){
-  $('#overlay').click(function(e){
-    $('#overlay').fadeOut();
-    $('#overlay').remove();
+jQuery(document).ready(function(){
+  jQuery('#overlay').click(function(e){
+    jQuery('#overlay').fadeOut();
+    jQuery('#overlay').remove();
   })
 });
