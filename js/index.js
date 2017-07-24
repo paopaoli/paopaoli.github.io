@@ -69,6 +69,6 @@ if(IE) {
 jQuery(document).ready(function(){
   jQuery('#overlay').click(function(e){
     jQuery('#overlay').fadeOut();
-    jQuery('#overlay').remove();
+    jQuery('#overlay').delay(400).remove();
   })
 });
