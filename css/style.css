@@ -33,6 +33,20 @@ body {
 ::scrollbar {
   display: none;
 }
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 200;
+}
+#overlay #overlay__gif{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
 #cf1 {
     position: fixed;
     left: 179px;

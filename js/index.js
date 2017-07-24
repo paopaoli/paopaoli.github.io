@@ -1,3 +1,4 @@
+
 var docHeight = 9999,
   windowHeight = -1,
   thisY = 0,		
@@ -64,3 +65,10 @@ if(IE) {
   window.addEventListener('resize', setWindowHeight, false);
   window.addEventListener('load', initialize, false);
 }
+
+$(document).ready(function(){
+  $('#overlay').click(function(e){
+    $('#overlay').fadeOut();
+    $('#overlay').remove();
+  })
+});
