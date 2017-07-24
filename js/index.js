@@ -68,7 +68,7 @@ if(IE) {
 
 jQuery(document).ready(function(){
   console.log(getCookie('opened'));
-  if(getCookie('opened')===1){
+  if(getCookie('opened')==='1'){
       jQuery('#overlay').remove();
   }else{
     jQuery('#overlay').click(function(e){
